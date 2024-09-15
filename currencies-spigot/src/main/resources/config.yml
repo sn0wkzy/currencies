@@ -1,0 +1,32 @@
+# Para ter mais informações sobre o "connection-url", acesse:
+# https://www.mongodb.com/pt-br/docs/manual/reference/connection-string/
+database:
+  connection-url: "mongodb://localhost:27017"
+
+#permissions:
+#/<currency> set - currencies.set
+#/<currency> add - currencies.add
+#/<currency> remove - currencies.remove
+messages:
+  invalid-amount: "&cInsira uma quantia valida."
+  invalid-player: "&cEsse jogador não está online."
+  cant-send-to-yourself: "&cVocê não pode enviar para si mesmo."
+  has-not-amount: "&cVocê não possui essa quantia fornecida."
+  currency-view: "{currency_color}Você possui {currency_symbol}{amount} {currency_plural}"
+  currency-set-send: "{currency_color}Você setou {currency_symbol}{amount} na conta do {target}"
+  currency-add-send: "{currency_color}Você adicionou {currency_symbol}{amount} na conta do {target}"
+  currency-add-receive: "{currency_color}Você recebeu {currency_symbol}{amount} de um membro da equipe do servidor"
+  currency-remove-receive: "{currency_color}Foi removido {currency_symbol}{amount} da sua conta por um membro da equipe do servidor"
+  currency-remove-send: "{currency_color}Você removeu {currency_symbol}{amount} da conta do {target}"
+  currency-pay-receive: "{currency_color}Você recebeu {currency_symbol}{amount} de {target}"
+  currency-pay-send: "{currency_color}Você enviou {currency_symbol}{amount} para {target}"
+
+currency:
+  coins:
+    singular: "coin"
+    plural: "coins"
+    symbol: "$"
+    color: "§a"
+    aliases:
+      - "dinheiro"
+      - "money"

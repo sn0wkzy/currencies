@@ -1,0 +1,3 @@
+name: Currencies
+main: com.github.sn0wkzy.currencies.spigot.CurrenciesPlugin
+version: 1.0.0

@@ -1,0 +1,19 @@
+[versions]
+spigot = "1.8.8-R0.1-SNAPSHOT"
+lombok = "1.18.32"
+annotations = "24.0.1"
+inventory-framework = "6f6a634cc5478a16ff81773ed8018"
+configuration = "1.0.2"
+mongodb = "5.0.1"
+caffeine = "3.1.8"
+luckperms-api = "5.4"
+
+[libraries]
+spigot = { module = "org.spigotmc:spigot-api", version.ref = "spigot" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+inventory-framework = { module = "com.github.DevNatan.inventory-framework:inventory-framework", version.ref = "inventory-framework" }
+configuration = { module = "com.github.HenryFabio.configuration-injector:bukkit", version.ref = "configuration" }
+mongodb = { module = "org.mongodb:mongodb-driver-sync", version.ref = "mongodb" }
+caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffeine" }
+luckperms-api = { module = "net.luckperms:api", version.ref = "luckperms-api" }
