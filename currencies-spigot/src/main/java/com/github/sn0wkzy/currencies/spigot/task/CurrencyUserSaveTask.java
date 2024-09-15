@@ -18,6 +18,7 @@ public class CurrencyUserSaveTask implements Runnable {
         final Set<CurrencyUser> dirtyUsers = currencyUserCache.getDirtyUsers();
         if (dirtyUsers.isEmpty()) return;
 
+        dirtyUsers.forEach(currencyUser -> currencyUser.setDirty(false));
         currencyUserRepository.bulkUpdate(dirtyUsers);
     }
 }
